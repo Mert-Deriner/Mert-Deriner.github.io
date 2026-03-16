@@ -4,37 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İletişim</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        <h1>İletişim</h1>
-        <p>Bana Ulaşın</p>
-    </header>
-    
+
     <nav>
         <ul>
             <li><a href="index.html">Ana Sayfa</a></li>
             <li><a href="about.html">Hakkımda</a></li>
             <li><a href="interests.html">İlgi Alanlarım</a></li>
-            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="contact.html" class="active">İletişim</a></li>
         </ul>
     </nav>
-    
-    <main>
-        <h2>Bana E-Posta Gönderin</h2>
-        <p>Bana ulaşmak için aşağıdaki bağlantıyı kullanabilirsiniz:</p>
-        <p><a href="mailto:ornek@mail.com">ornek@mail.com</a> 'a e-posta gönderin.</p>
 
-        <h2>Sosyal Medya Hesaplarım</h2>
-        <ul>
-            <li><a href="https://github.com/ornek-kullanici" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/ornek-kullanici" target="_blank">LinkedIn</a></li>
-            <li><a href="https://twitter.com/ornek-kullanici" target="_blank">Twitter</a></li>
-        </ul>
+    <section class="hero">
+        <h1>İletişim</h1>
+        <p class="subtitle">Bana Ulaşın</p>
+    </section>
+
+    <main>
+        <div class="card fade-in">
+            <h2>Bana E-Posta Gönderin</h2>
+            <p>Bana ulaşmak için aşağıdaki bağlantıyı kullanabilirsiniz:</p>
+            <p><a href="mailto:ornek@mail.com">ornek@mail.com</a> adresine e-posta gönderin.</p>
+        </div>
+
+        <div class="card fade-in fade-in-delay-1">
+            <h2>Sosyal Medya Hesaplarım</h2>
+            <ul>
+                <li><a href="https://github.com/Mert-Deriner" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/ornek-kullanici" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com/ornek-kullanici" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
     </main>
-    
+
+    <!-- İLETİŞİM FORMU (Lab 3 - Box Model) -->
+    <div class="contact-container fade-in fade-in-delay-2">
+        <h2>İletişim Formu</h2>
+        <form>
+            <label for="fullname">Ad Soyad</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Adınız Soyadınız">
+
+            <label for="email">E-posta</label>
+            <input type="email" id="email" name="email" placeholder="ornek@mail.com">
+
+            <label for="subject">Konu</label>
+            <select id="subject" name="subject">
+                <option value="">-- Konu Seçin --</option>
+                <option value="is-teklifi">İş Teklifi</option>
+                <option value="soru">Soru</option>
+                <option value="geri-bildirim">Geri Bildirim</option>
+            </select>
+
+            <label for="message">Mesaj</label>
+            <textarea id="message" name="message" placeholder="Mesajınızı buraya yazın..."></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+
     <footer>
         <p>&copy; 2026 Ad Soyad. Tüm hakları saklıdır.</p>
     </footer>
+
 </body>
 </html>
