@@ -3,51 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İlgi Alanlarım</title>
+    <title>Hakkımda</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        <h1>İlgi Alanlarım</h1>
-        <p>Nelerle Uğraşırım?</p>
-    </header>
-    
+
     <nav>
         <ul>
             <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="about.html" class="active">Hakkımda</a></li>
             <li><a href="interests.html">İlgi Alanlarım</a></li>
             <li><a href="contact.html">İletişim</a></li>
         </ul>
     </nav>
-    
+
+    <section class="hero">
+        <h1>Hakkımda</h1>
+        <p class="subtitle">Kendimi Tanıtayım</p>
+    </section>
+
     <main>
-        <h2 id="hobiler">Favori Hobilerim</h2>
-        <ul>
-            <li>Kitap Okumak</li>
-            <li>Film / Dizi İzlemek</li>
-            <li>Yeni Teknolojileri Araştırmak</li>
-        </ul>
+        <div class="card fade-in">
+            <h2>Ben Kimim?</h2>
+            <p>Ben <strong>Mert</strong>, Web Programlama dersi alan hevesli bir öğrenciyim. Web teknolojilerine olan ilgim her geçen gün artıyor.</p>
+            <p>HTML, CSS ve JS becerilerimi bu <em>ilk portfolyo</em> projesinde pekiştirmeye çalışıyorum. Kod yazmak benim için hem bir öğrenme aracı hem de yaratıcı bir ifade biçimi.</p>
+        </div>
 
-        <h2>Yapmayı Sevdiğim Sporlar</h2>
-        <ol>
-            <li>Yüzme</li>
-            <li>Bisiklet Sürmek</li>
-            <li>Yürüyüş</li>
-        </ol>
+        <div class="card fade-in fade-in-delay-1">
+            <h2>Sevdiğim Bir Alıntı</h2>
+            <blockquote>
+                Yaşamak, kendi yolunu çizmektir. — Anonim
+            </blockquote>
+        </div>
 
-        <h2>Sözlük - Sevdiğim Terimler</h2>
-        <dl>
-            <dt>HTML</dt>
-            <dd>HyperText Markup Language, web sayfalarının iskeletini oluşturur.</dd>
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheets, web sayfalarının görünümünü şekillendirir.</dd>
-            <dt>JavaScript</dt>
-            <dd>Web sayfalarına etkileşim katar.</dd>
-        </dl>
+        <div class="card fade-in fade-in-delay-2" id="egitim">
+            <h2>Eğitim ve Hedeflerim</h2>
+            <ul>
+                <li><strong>2023:</strong> Üniversiteye giriş.</li>
+                <li><strong>2024:</strong> Temel programlama dersleri.</li>
+                <li><strong>2025:</strong> Web programlamaya giriş ve ilk projeler.</li>
+                <li><strong>Gelecek Hedefim:</strong> <em>Full-Stack Geliştirici</em> olmak.</li>
+            </ul>
+        </div>
     </main>
-    
+
     <footer>
         <p>&copy; 2026 Ad Soyad. Tüm hakları saklıdır.</p>
     </footer>
+
 </body>
 </html>
