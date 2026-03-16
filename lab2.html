@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - HTML/CSS Uygulama</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <!-- NAVİGASYON MENÜSÜ: ul > li > a yapısı, display: inline-block ile yatay -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER: h1 + kısa p metni -->
+    <section class="hero">
+        <h1>Web Programlama — Lab 2</h1>
+        <p class="subtitle">HTML ve CSS temellerini kullanarak hazırlanmış örnek sayfa</p>
+    </section>
+
+    <!-- İKİ SÜTUNLU İÇERİK -->
+    <main>
+        <div class="two-columns fade-in">
+
+            <!-- SOL SÜTUN: İçerik -->
+            <div class="content-col">
+                <h2>İçerik</h2>
+                <p>
+                    Bu bölümde web programlamanın temel taşları olan HTML ve CSS hakkında
+                    bilgiler yer almaktadır. HTML, web sayfalarının iskeletini oluşturan bir
+                    işaretleme dilidir ve her modern web sitesinin temelinde bulunur.
+                </p>
+                <p>
+                    CSS ise bu yapıya görsel kimlik kazandıran stil dilidir. Renkler,
+                    yazı tipleri, kenar boşlukları ve sayfa düzeni gibi pek çok görsel
+                    özellik CSS aracılığıyla kontrol edilir. İkisinin birlikte kullanımı
+                    profesyonel web sayfaları üretmeyi mümkün kılar.
+                </p>
+            </div>
+
+            <!-- SAĞ SÜTUN: Yan Menü / Bilgi -->
+            <div class="sidebar-col">
+                <h2>Yan Menü / Bilgi</h2>
+                <p>
+                    Bu alanda ek bilgiler ve faydalı bağlantılar paylaşılmaktadır.
+                    Dersin içeriğine yönelik kısa notlar burada yer alabilir.
+                </p>
+                <p>
+                    HTML5 ve CSS3 günümüzde web standartlarının en güncel sürümleridir
+                    ve tüm modern tarayıcılar tarafından desteklenmektedir.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Web Programlama Dersi. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
