@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kişisel Web Sitem</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        <h1>Kişisel Web Sitem</h1>
-        <p>Benim küçük portfolyoma hoş geldiniz!</p>
-    </header>
-    
+
     <nav>
         <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
             <li><a href="about.html">Hakkımda</a></li>
             <li><a href="interests.html">İlgi Alanlarım</a></li>
             <li><a href="contact.html">İletişim</a></li>
         </ul>
     </nav>
-    
+
+    <section class="hero">
+        <h1>Merhaba, Ben Mert</h1>
+        <p class="subtitle">Web Geliştirici · Öğrenci · Teknoloji Meraklısı</p>
+    </section>
+
     <main>
-        <h2>Hoş Geldiniz</h2>
-        <p>Merhaba, burası benim kişisel web sayfam. Aşağıdaki hızlı bağlantıları kullanarak hakkımda daha fazla bilgi edinebilirsiniz.</p>
-        
-        <h2>Hızlı Bağlantılar</h2>
-        <ul>
-            <li><a href="about.html#egitim">Eğitim Bilgilerime Git</a></li>
-            <li><a href="interests.html#hobiler">Hobilerime Göz At</a></li>
-        </ul>
+        <div class="card fade-in">
+            <h2>Hoş Geldiniz</h2>
+            <p>Burası benim kişisel web sayfam. Web programlama yolculuğumda öğrendiklerimi ve projelerimi bu sitede paylaşıyorum. Aşağıdaki hızlı bağlantıları kullanarak benim hakkımda daha fazla bilgi edinebilirsiniz.</p>
+        </div>
+
+        <h2 class="fade-in fade-in-delay-1">Hızlı Bağlantılar</h2>
+        <div class="quick-links fade-in fade-in-delay-2">
+            <a href="about.html#egitim">
+                <span class="icon">🎓</span>
+                Eğitim Bilgilerim
+            </a>
+            <a href="interests.html#hobiler">
+                <span class="icon">🎯</span>
+                Hobilerime Göz At
+            </a>
+            <a href="contact.html">
+                <span class="icon">✉️</span>
+                Bana Ulaşın
+            </a>
+        </div>
     </main>
-    
+
     <footer>
         <p>&copy; 2026 Ad Soyad. Tüm hakları saklıdır.</p>
     </footer>
+
 </body>
 </html>
